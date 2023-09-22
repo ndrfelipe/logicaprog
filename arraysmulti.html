@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Array Multi</title>
+	</head>
+	<body>
+
+
+		<script type="text/javascript">
+
+			var pessoas = [
+					['Carlos ', 19, ' Paulista'],
+					['Ana ', 20, ' Abreu'],
+					['José ', 18, ' Recife'],
+					['Matheus ', 17, ' Cabo'],
+					['André ', 21, ' Jaboatão']
+				]
+			console.table(pessoas)
+
+			for(var i = 0; i <= pessoas.length - 1; i++){
+
+				document.write('NOME: ' + pessoas[i][0] + '</br>  IDADE: ' + pessoas[i][1] + '  </br> CIDADE:  ' + pessoas[i][2] + '</br>')
+				document.write("</br>")
+
+			}
+			
+		</script>
+	</body>
+</html>

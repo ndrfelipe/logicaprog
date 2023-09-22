@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Revisão Manhã</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		// Anotações
+
+		// Funcões do array:
+		// 	Adicionar um elemento no vetor: exemplovar.push(exemplo)
+		// retirar um elemento do vetor: exemplovar.pop
+		// ver o tamanho do array: exemploarray.lenght
+
+		/*var numero = [1, 2, 3, 4, 5]
+		console.log(numero)
+		*/
+
+		// 2º questão
+		/*
+		var nome = ['André', 'Clarinha', 'Dayvid', 'Josué', 'Matheus','Renata','Gustavo','Ingrid', 'Miguel', 'João']
+
+		var altura = [1.75, 1.60, 1.80, 1.74, 1.85, 1.67, 1.90, 1.55, 1.76, 1.75]
+
+		var i = 0
+
+		while (i <10){
+			document.write('Nome: ' + nome[i] + '</br>')
+			document.write('Idade: ' + altura[i] + '</br>')
+			document.write('</br>' )
+
+			i++
+		}
+		*/
+
+		//3º Questão
+
+		
+		/*
+		var numero = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+		var i = 0
+		var c = 0
+		while (i <10){
+			c = numero[i]*numero[i]
+			i++
+
+			document.write(c + '</br>')
+		}
+
+		console.log(numero)
+		console.log(c)
+		*/
+
+		// 4ª questão e 5º
+
+		/*
+		var a = [25, 6, -9, 22, 34]
+		var b = [56, 12, 0, -89, 4]
+
+		var i = 0
+		var c = 0
+		while (i <5){
+			c = a[i]+ b[i]
+			i++
+
+			document.write(c + '</br>')
+		}
+		*/
+
+		// 7ª questão
+
+		/*
+		var nome = ["André", "Lucas", "Ana", "Ingrid", "Barreto"]
+		var sobrenome = [" Felipe", " Lima", " Clara", " Nonato", " Júnior"]
+		var i = 0
+		var nome_completo = []
+		var b = 0
+
+		while(i < 5){
+			nome_completo[i] = nome[i] + sobrenome[i];
+			document.write("Nome completo: " + nome_completo[i] + "</br>")
+			i++
+
+		}
+		*/
+
+		// 8º questão
+
+		/*
+		const a = [25, 6, -9, 22, 34]
+		const b = [56, 12, 0, -89, 4]
+		const c = a.concat(b);
+
+		document.write(c)
+		*/
+
+		// 9º questão
+		/*
+		var nome = ["André", "Lucas", "Ana", "Ingrid", "Barreto"]
+		var a = prompt('Digite um nome que queria encontrar no vetor ')
+		var posicao = nome.indexOf(a);
+
+		if ( posicao === -1){
+			alert("Elemento não encontrado")
+		}else{
+			alert('Elemento: ' + posicao)
+		}*/
+
+		function trocar(vetor, i, j){
+			var temp = vetor[i];
+			vetor[i] = vetor[j];
+			vetor[j] = temp;
+		}
+
+		//criar vetor
+		var numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+		for (var i = 0; i < 10; i++){
+			trocar(numero, i, 19 - i)
+		}
+
+		document.write("<p>Vetor resultante: " + numero.join(", ") + "</p>")
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* var livro = {
+            titulo: "Harry Potter e o Prisioneiro de Azkaban",
+            autor: "J. K. Rowlling",
+            editora: "Rocco",
+            ano: 2017
+        }
+
+        console.log(livro) */
+
+        //2º
+
+        var luke = {
+            nome: "Luke",
+            força: 6,
+            destreza: 3,
+            inteligencia: 6,
+            percepcao: 9
+        }
+
+        var jon = {
+            nome: "Jon",
+            força: 3,
+            destreza: 9,
+            inteligencia: 3,
+            percepcao: 3
+        }
+
+        console.log(jon)
+        console.log(luke)
+
+        var resposta = prompt("Você deseja criar um novo personagem? (S/N)")
+
+        while(resposta == "S"){
+            var personagem = {
+            nome: prompt("Digite o nome do personagem: "),
+            força: parseInt(prompt('Digite a força: ')),
+            destreza: parseInt(prompt('Digite a destreza: ')),
+            inteligencia: parseInt(prompt('Digite a inteligencia: ')),
+            percepcao: parseInt(prompt('Digite a percepção: '))
+
+            
+        }
+
+        document.write("Personagem: ")
+        document.write("</br>")
+        document.write("Nome: " +personagem.nome)
+        document.write("</br>")
+        document.write("Força: " +personagem.força)
+        document.write("</br>")
+        document.write("Destreza: " +personagem.destreza)
+        document.write("</br>")
+        document.write("Inteligência: " +personagem.inteligencia)
+        document.write("</br>")
+        document.write("Percepção: " +personagem.percepcao)
+        document.write("</br>")
+
+        var resposta = prompt("Você deseja criar um novo personagem? (S/N)")
+    }
+        
+
+
+    </script>
+</body>
+</html>
